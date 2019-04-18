@@ -111,6 +111,7 @@ def turn(board)
     if valid_move?(board, input)
       move(board, input, token)
       display_board(board)
+      return board
     else
       turn(board)
     end
